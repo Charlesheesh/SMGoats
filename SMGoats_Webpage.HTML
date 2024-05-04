@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(White, Gray);
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .profile-page {
+            height: 245vh;
+            overflow: auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        nav a img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: absolute;
+        }
+        .back-button {
+            margin-top: 10px;
+        }
+
+        #p1 {
+		    top: 195px;
+            left: 125px;
+        }
+        #p2 {
+            top: 310px;
+            left: 376px;
+        }
+        #p3 {
+            top: 310px;
+            left: 125px;
+        }
+        #p4 {
+            top: 195px;
+            left: 376px;
+        }
+        #p5 {
+            top: 195px;
+            left: 625px;
+        }
+        #p6 {
+            top: 310px;
+            left: 625px;
+        }
+		#p7 {
+            top: 195px;
+            left: 876px;
+        }
+		#p8 {
+            top: 310px;
+            left: 876px;
+        }
+		#p9 {
+            top: 425px;
+            left: 876px;
+		}
+		#p10 {
+            top: 425px;
+            left: 625px;
+		}
+		#p11 {
+            top: 425px;
+            left: 376px;
+		}
+		#p12 {
+            top: 425px;
+            left: 125px;
+		}
+		#p13 {
+            top: 540px;
+            left: 125px;
+		}
+		#p14 {
+            top: 540px;
+            left: 376px;
+		}
+		#p15 {
+            top: 540px;
+            left: 625px;
+		}
+		#p16 {
+            top: 540px;
+            left: 876px;
+		}
+		#p17 {
+            top: 655px;
+            left: 876px;
+		}
+		#p18 {
+            top: 655px;
+            left: 625px;
+		}
+		#p19 {
+            top: 655px;
+            left: 376px;
+		}
+		#p20 {
+            top: 655px;
+            left: 125px;
+		}
+		#p21 {
+            top: 770px;
+            left: 125px;
+		}
+		#p22 {
+            top: 770px;
+            left: 376px;
+		}
+		#p23 {
+            top: 770px;
+            left: 625px;
+		}
+		#p24 {
+            top: 770px;
+            left: 876px;
+		}
+		#p25 {
+            top: 885px;
+            left: 876px;
+		}
+		#p26 {
+            top: 885px;
+            left: 625px;
+		}
+		#p27 {
+            top: 885px;
+            left: 376px;
+		}
+		#p28 {
+            top: 885px;
+            left: 125px;
+		}
+		#p29 {
+            top: 1000px;
+            left: 125px;
+		}
+		#p30 {
+            top: 1000px;
+            left: 376px;
+		}
+		#p31 {
+            top: 1000px;
+            left: 625px;
+		}
+		#p32 {
+            top: 1000px;
+            left: 876px;
+		}
+		#p33 {
+            top: 1115px;
+            left: 876px;
+		}
+		#p34 {
+            top: 1115px;
+            left: 625px;
+		}
+		#p35 {
+            top: 1115px;
+            left: 376px;
+		}
+		#p36 {
+            top: 1115px;
+            left: 125px;
+		}
+		#p37 {
+            top: 1230px;
+            left: 125px;
+		}
+		#hi {
+            top: 1230px;
+            left: 376px;
+		}
+		#p39 {
+            top: 1230px;
+            left: 625px;
+		}
+		#p40 {
+            top: 1230px;
+            left: 876px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SMGoats</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showHome()">Home</a>
+        <a href="#" onclick="showImages()">Images</a>
+        <a href="#" onclick="showVideos()">Videos</a>
+        <a href="#" onclick="showProfiles()">Profiles</a>
+        <a href="#" onclick="showAbout()">About</a>
+    </nav>
+    <div class="content" id="content">
+        <h2>Welcome to SMGoats</h2>
+        <p>Click the Profile in the navigation, if you wish to go there</p>
+    </div>
+    <div class="Profiles" id="Profiles">
+        <div class="box" id="p1" style="display: none;">
+            <h2>Balaman</h2>
+                <a href="Balaman.html">Profile</a>
+        </div>
+        <div class="box" id="p2" style="display: none;">
+            <h2>Guino-o</h2>
+                <a href="Guino-o.html">Profile</a>
+        </div>
+        <div class="box" id="p3" style="display: none;">
+            <h2>Gabales</h2>
+                <a href="Gabales_Profile.HTML">Profile</a>
+        </div>
+        <div class="box" id="p4" style="display: none;">
+            <h2>bongato</h2>
+                <a href="p4.html">Profile</a>
+        </div>
+        <div class="box" id="p5" style="display: none;">
+            <h2>Casana</h2>
+                <a href="Casana.html">Profile</a>
+        </div>
+		<div class="box" id="p6"style="display: none;">
+            <h2>Javier</h2>
+                <a href="P6.html">Profile</a>
+        </div>
+		<div class="box" id="p7" style="display: none;">
+            <h2>Fenequito</h2>
+                <a href="P7.html">Profile</a>
+        </div>
+		<div class="box" id="p8" style="display: none;">
+            <h2>Laure</h2>
+                <a href="Laure.html">Profile</a>
+        </div>
+		<div class="box" id="p9" style="display: none;">
+            <h2>Piodos</h2>
+                <a href="P9.html">Profile</a>
+        </div>
+		<div class="box" id="p10" style="display: none;">
+            <h2>Pastoril</h2>
+                <a href="pastoril.html">Profile</a>
+        </div>
+		<div class="box" id="p11" style="display: none;">
+            <h2>Morandante</h2>
+                <a href="P11.html">Profile</a>
+        </div>
+		<div class="box" id="p12" style="display: none;">
+            <h2>Mendoza</h2>
+                <a href="Mendoza.html">Profile</a>
+        </div>
+		<div class="box" id="p13" style="display: none;">
+            <h2>Rabara</h2>
+                <a href="P13.html">Profile</a>
+        </div>
+		<div class="box" id="p14" style="display: none;">
+            <h2>Sarigumba</h2>
+                <a href="SARIGUMBA.html">Profile</a>
+        </div>
+		<div class="box" id="p15" style="display: none;">
+            <h2>Simodlan</h2>
+                <a href="P15.html">Profile</a>
+        </div>
+		<div class="box" id="p16" style="display: none;">
+            <h2>Tan</h2>
+                <a href="Tan.html">Profile</a>
+        </div>
+		<div class="box" id="p17" style="display: none;">
+            <h2>Albakur</h2>
+                <a href="P17.html">Profile</a>
+        </div>
+		<div class="box" id="p18" style="display: none;">
+            <h2>Abregana</h2>
+                <a href="P18.html">Profile</a>
+        </div>
+		<div class="box" id="p19" style="display: none;">
+            <h2>Abrea</h2>
+                <a href="abreas_profile.html">Profile</a>
+        </div>
+		<div class="box" id="p20" style="display: none;">
+            <h2>Venus</h2>
+                <a href="Venus.html">Profile</a>
+        </div>
+		<div class="box" id="p21" style="display: none;">
+            <h2>Alonzo</h2>
+                <a href="Alonzo.html">Profile</a>
+        </div>
+		<div class="box" id="p22" style="display: none;">
+            <h2>Bacay</h2>
+                <a href="P22.html">Profile</a>
+        </div>
+		<div class="box" id="p23" style="display: none;">
+            <h2>Bestudio</h2>
+                <a href="P23.html">Profile</a>
+        </div>
+		<div class="box" id="p24" style="display: none;">
+            <h2>Bruno</h2>
+                <a href="BRUNOS-PROFILE.html">Profile</a>
+        </div>
+		<div class="box" id="p25" style="display: none;">
+            <h2>Cruda</h2>
+                <a href="Cruda.html">Profile</a>
+        </div>
+		<div class="box" id="p26" style="display: none;">
+            <h2>Castillano</h2>
+                <a href="Profile_Castillano.html">Profile</a>
+        </div>
+		<div class="box" id="p27" style="display: none;">
+            <h2>Calmerin</h2>
+                <a href="CALMERIN.html">Profile</a>
+        </div>
+		<div class="box" id="p28" style="display: none;">
+            <h2>Cabagay</h2>
+                <a href="Cabagay.html">Profile</a>
+        </div>
+		<div class="box" id="p29" style="display: none;">
+            <h2>Deala</h2>
+                <a href="Deala.html">Profile</a>
+        </div>
+        <div class="box" id="p30" style="display: none;">
+            <h2>Granada</h2>
+                <a href="Granada.html">Profile</a>
+        </div>
+		<div class="box" id="p31" style="display: none;">
+            <h2>Guitguiten</h2>
+                <a href="Guitguiten.html">Profile</a>
+        </div>
+		<div class="box" id="p32" style="display: none;">
+            <h2>Inigo</h2>
+                <a href="P32.html">Profile</a>
+        </div>
+		<div class="box" id="p33" style="display: none;">
+            <h2>Marami</h2>
+                <a href="P33.html">Profile</a>
+        </div>
+		<div class="box" id="p34" style="display: none;">
+            <h2>Maagma</h2>
+                <a href="Maagma.html">Profile</a>
+        </div>
+		<div class="box" id="p35" style="display: none;">
+            <h2>Laxamana</h2>
+                <a href="Laxamana.html">Profile</a>
+        </div>
+		<div class="box" id="p36" style="display: none;">
+            <h2>Laurente</h2>
+                <a href="P36.html">Profile</a>
+        </div>
+		<div class="box" id="p37" style="display: none;">
+            <h2>Medina</h2>
+                <a href="Medina.html">Profile</a>
+        </div>
+		<div class="box" id="hi" style="display: none;">
+            <h2>Presas</h2>
+                <a href="Presas_Profile.html">Profile</a>
+        </div>
+		<div class="box" id="p39" style="display: none;">
+            <h2>Rodas</h2>
+                <a href="rodas, gwyn G22.html">Profile</a>
+        </div>
+		<div class="box" id="p40" style="display: none;">
+            <h2>Singh</h2>
+                <a href="P40.html">Profile</a>
+        </div>
+    </div>
+
+    <script>
+        function showHome() {
+            document.getElementById('content').innerHTML = '<h2>Welcome to SMGoats</h2><p>Click the profile in the navigation if you wish to go there.</p>';
+            hideProfileBoxes();
+        }
+        function showImages() {
+            document.getElementById('content').innerHTML = '<h2>Images</h2><p>This is the images page.</p>';
+            hideProfileBoxes();
+        }
+        function showVideos() {
+            document.getElementById('content').innerHTML = '<h2>Videos</h2><p>This is the videos page.</p>';
+            hideProfileBoxes();
+        }
+        function showProfiles() {
+            document.getElementById('content').innerHTML = '<p> If you wish to go back after you entered a profile you may click the left arrow, right on the top left corner.';
+            document.getElementById('Profiles').style.display = 'block';
+            document.body.classList.add('profile-page');
+            document.getElementById('p1').style.display = 'block';
+            document.getElementById('p2').style.display = 'block';
+            document.getElementById('p3').style.display = 'block';
+            document.getElementById('p4').style.display = 'block';
+            document.getElementById('p5').style.display = 'block';
+            document.getElementById('p6').style.display = 'block';
+            document.getElementById('p7').style.display = 'block';
+            document.getElementById('p8').style.display = 'block';
+            document.getElementById('p9').style.display = 'block';
+            document.getElementById('p10').style.display = 'block';
+            document.getElementById('p11').style.display = 'block';
+            document.getElementById('p12').style.display = 'block';
+            document.getElementById('p13').style.display = 'block';
+            document.getElementById('p14').style.display = 'block';
+            document.getElementById('p15').style.display = 'block';
+            document.getElementById('p16').style.display = 'block';
+            document.getElementById('p17').style.display = 'block';
+            document.getElementById('p18').style.display = 'block';
+            document.getElementById('p19').style.display = 'block';
+            document.getElementById('p20').style.display = 'block';
+            document.getElementById('p21').style.display = 'block';
+            document.getElementById('p22').style.display = 'block';
+            document.getElementById('p23').style.display = 'block';
+            document.getElementById('p24').style.display = 'block';
+            document.getElementById('p25').style.display = 'block';
+            document.getElementById('p26').style.display = 'block';
+            document.getElementById('p27').style.display = 'block';
+            document.getElementById('p28').style.display = 'block';
+            document.getElementById('p29').style.display = 'block';
+            document.getElementById('p30').style.display = 'block';
+            document.getElementById('p31').style.display = 'block';
+            document.getElementById('p32').style.display = 'block';
+            document.getElementById('p33').style.display = 'block';
+            document.getElementById('p34').style.display = 'block';
+            document.getElementById('p35').style.display = 'block';
+            document.getElementById('p36').style.display = 'block';
+            document.getElementById('p37').style.display = 'block';
+            document.getElementById('hi').style.display = 'block';
+            document.getElementById('p39').style.display = 'block';
+            document.getElementById('p40').style.display = 'block';
+        }
+
+        function hideProfileBoxes() {
+		    document.getElementById('Profiles').style.display = 'none';
+            document.body.classList.remove('profile-page');
+            document.getElementById('p1').style.display = 'none';
+            document.getElementById('p2').style.display = 'none';
+            document.getElementById('p3').style.display = 'none';
+            document.getElementById('p4').style.display = 'none';
+            document.getElementById('p5').style.display = 'none';
+            document.getElementById('p6').style.display = 'none';
+            document.getElementById('p7').style.display = 'none';
+            document.getElementById('p8').style.display = 'none';
+            document.getElementById('p9').style.display = 'none';
+            document.getElementById('p10').style.display = 'none';
+            document.getElementById('p11').style.display = 'none';
+            document.getElementById('p12').style.display = 'none';
+            document.getElementById('p13').style.display = 'none';
+            document.getElementById('p14').style.display = 'none';
+            document.getElementById('p15').style.display = 'none';
+            document.getElementById('p16').style.display = 'none';
+            document.getElementById('p17').style.display = 'none';
+            document.getElementById('p18').style.display = 'none';
+            document.getElementById('p19').style.display = 'none';
+            document.getElementById('p20').style.display = 'none';
+            document.getElementById('p21').style.display = 'none';
+            document.getElementById('p22').style.display = 'none';
+            document.getElementById('p23').style.display = 'none';
+            document.getElementById('p24').style.display = 'none';
+            document.getElementById('p25').style.display = 'none';
+            document.getElementById('p26').style.display = 'none';
+            document.getElementById('p27').style.display = 'none';
+            document.getElementById('p28').style.display = 'none';
+            document.getElementById('p29').style.display = 'none';
+            document.getElementById('p30').style.display = 'none';
+            document.getElementById('p31').style.display = 'none';
+            document.getElementById('p32').style.display = 'none';
+            document.getElementById('p33').style.display = 'none';
+            document.getElementById('p34').style.display = 'none';
+            document.getElementById('p35').style.display = 'none';
+            document.getElementById('p36').style.display = 'none';
+            document.getElementById('p37').style.display = 'none';
+            document.getElementById('hi').style.display = 'none';
+            document.getElementById('p39').style.display = 'none';
+            document.getElementById('p40').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('content').innerHTML = '<h2>About</h2><p>This is the About page.</p>';
+            hideProfileBoxes();
+        }
+    </script>
+</body>
+</html>

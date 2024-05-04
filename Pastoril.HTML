@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f7fc;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section {
+        max-width: 600px;
+        margin: 60px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    } 
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: black;
+        text-align: center;
+    }
+    
+    p {
+        margin-bottom: 10px;
+        color: #333;
+        line-height: 1.6;
+    }
+    .interests {
+        font-style: italic;
+        color: #777;
+    }
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        overflow: hidden;
+        border: 4px solid black;
+    }
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .start-button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0066cc;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .start-button:hover {
+        background-color: #0055aa;
+    }
+</style>
+</head>
+<body>
+    <div class="section" id="welcome-section">
+	<center>
+	<h1>
+        Welcome to My Profile
+	</h1>
+        <p>I you wish to see my profile, click view</p>
+        <a href="#profile-section" class="start-button">View</a>
+	
+		</center>
+    </div>
+    
+    <div class="section" id="profile-section" style="display: none;">
+        <div class="profile-image">
+            <img src="438238375_430347806273647_3227807839121604846_n.jpg" alt="Profile Image">
+        </div>
+        <h1>Charles Johnford Pastoril</h1>
+        <p><strong>Age:</strong> 15</p>
+        <p><strong>Date of Birth:</strong> September 01, 2008</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Location:</strong> Purok 14, Bato, Toril, Davao City</p>
+        <p><strong>Interests:</strong> Cooking, Chess, poetry, Coding, & music</p>
+        <p>I am a academic achiever and graduating student, with a passion of programming, and has a career of becoming a civil engineer. I do like making a music and a poem, and mostly in my free time I play chess.</p>
+		<br>
+		<p>"I gave my all, my heart, my soul, but love's path, took a different stroll." 
+		<br>- Flix </center><p>
+    </div>
+    
+    <script>
+        document.querySelector('.start-button').addEventListener('click', function() {
+            document.getElementById('welcome-section').style.display = 'none';
+            document.getElementById('profile-section').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
